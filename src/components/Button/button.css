@@ -1,0 +1,12 @@
+.button {
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.primary {
+  background-color: blue;
+}
+.danger {
+  background-color: red;
+}

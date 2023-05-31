@@ -1,0 +1,18 @@
+.input {
+  border: 1px solid #000;
+}
+
+.sm {
+  width: 50px;
+  padding: 2px;
+}
+
+.md {
+  width: 100px;
+  padding: 4px;
+}
+
+.lg {
+  width: 200px;
+  padding: 4px;
+}
