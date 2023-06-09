@@ -1,6 +1,7 @@
 import HCenter from "../HCenter/HCenter";
 import Button from "./Button";
 import { action, actions } from "@storybook/addon-actions";
+import { text, boolean } from "@storybook/addon-knobs";
 
 export default {
   title: "Form/Button",
@@ -20,7 +21,7 @@ export default {
 };
 
 export const Primary = () => (
-  <Button variant={"primary"} onClick={action("Clicked")}>
+  <Button variant={"primary"} onClick={action("Clickedd")}>
     Primary
   </Button>
 );
@@ -30,16 +31,15 @@ export const Danger = () => (
   </Button>
 );
 
+export const ConsoleLogButton = () => (
+  <Button variant={"primary"} onClick={() => console.log("Button clicked")}>
+    Print on Console
+  </Button>
+);
+
 Primary.storyName = "Primary Button";
 
-const Template = (args) => (
-  <Button
-    {...args}
-    onClick={() => {
-      console.log("clicked");
-    }}
-  />
-);
+const Template = (args) => <Button {...args} />;
 
 export const PrimaryT = Template.bind({});
 PrimaryT.args = {
@@ -53,3 +53,9 @@ SecondaryPrimaryT.args = {
   ...PrimaryT.args,
   children: "SecondaryPrimaryT",
 };
+
+export const KnobButton = () => (
+  <Button variant={"primary"} onClick={() => console.log("Button clicked")} disabled={boolean("Disabled", false)}>
+    {text("Label", "Button Label")}
+  </Button>
+);

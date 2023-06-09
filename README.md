@@ -1,5 +1,7 @@
 ## Storybook
 
+Latest Version is 7 as on 9 June 2023. But we will say We have used version 6.
+
 It is playground for UI components, showcase components interactively in an isolated development environment.
 It run outside of React application.
 It provides following capabilities:
@@ -13,9 +15,11 @@ It provides following capabilities:
 
 - `npx sb init` : It will install storybook dependencies, add storybook script in package.json and eslint plugins. It creates .storybook directory that contains storybook configuration and a stories directory in src directory that contains sample components and their stories.
 
+In storybook configuration `main.js` is file for storybook configuration and `preview.js` is configuration for stories you write.
+
 ## Sorting Stories
 
-You can sort stories by tweaking storybook configuration.
+You can sort stories by tweaking storybook configuration. Go to this link https://storybook.js.org/docs/react/writing-stories/naming-components-and-hierarchy. Navigate page to "Sorting Stories". Copy configuration in preview.js. That's all.
 
 ## Stories inside Stories
 

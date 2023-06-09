@@ -43,9 +43,14 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.0.20",
+    "@storybook/addon-console": "^2.0.0",
+    "@storybook/addon-docs": "^7.0.20",
     "@storybook/addon-essentials": "^7.0.18",
     "@storybook/addon-interactions": "^7.0.18",
+    "@storybook/addon-knobs": "^7.0.2",
     "@storybook/addon-links": "^7.0.18",
+    "@storybook/addon-viewport": "^7.0.20",
     "@storybook/blocks": "^7.0.18",
     "@storybook/preset-create-react-app": "^7.0.18",
     "@storybook/react": "^7.0.18",
